@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: rgb(236, 12, 12);
+  height: 4rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 5px #ccc;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.logo {
+  width: 4rem;
+}
+
+#show-all-data {
+  display: none;
+}
+
+.movies-data {
+  padding-right: 20px;
+  display: flex;
+  background-color: black;
+}
+
+.sub-btn {
+  width: 10rem;
+  height: auto;
+  align-items: center;
+  margin-left: 1rem;
+  border-radius: 0.6rem;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 900;
+  cursor: pointer;
+  background-color: white;
+}
+
+.serch-box {
+  display: flex;
+  border: 1px solid black;
+}
+
+.search-div {
+  display: flex;
+  justify-content: center !important;
+  border-radius: 5px;
+}
+
+.search-div input {
+  font-size: 20px;
+  padding: 2px;
+  width: 30rem;
+  border: none;
+  outline: none;
+  padding-left: 30px;
+}
+
+.search-div img {
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 3.7rem;
+  cursor: pointer;
+  background-color: white;
+}
+
+.sub-btn:hover {
+  background-color: rgba(40, 236, 40, 0.815);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#message {
+  width: 100%;
+  height: 59rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* padding: 25px; */
+  transition: all 1s;
+}
+
+#all-movie {
+  padding: 10px 20px 20px 20px;
+  width: 500px;
+  /* height: 570px; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: scroll;
+}
+
+#all-movie:first-child {
+  margin-top: 4rem;
+}
+
+#all-movie::-webkit-scrollbar {
+  height: 0;
+}
+
+.movie {
+  height: 200px;
+  display: grid;
+  grid-template-columns: 150px 250px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  border-bottom: 1px solid rgb(92, 90, 90);
+  padding-bottom: 10px;
+  padding-top: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  border-radius: 0.7rem;
+}
+
+.movie:hover {
+  box-shadow: 0 0 7px #ffff2e;
+  transform: scale(1.03);
+}
+
+.movie img {
+  margin: 0 auto;
+  height: 180px;
+  object-fit: contain;
+}
+
+.movie-data {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.title {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.other {
+  font-family: "Oswald", sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.lang {
+  text-transform: uppercase;
+}
+
+span {
+  text-transform: capitalize;
+}
+
+.movie-id {
+  display: none;
+}
+
+#one-data {
+  width: 70%;
+  overflow: hidden;
+  position: fixed;
+  left: 27%;
+  top: 10%;
+}
+
+.one-movie-data {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 200px 550px;
+  column-gap: 60px;
+  /* border-bottom: 1px solid rgb(65, 62, 62); */
+  /* border-left: 1px solid rgb(65, 62, 62); */
+}
+
+.one-movie-data img {
+  height: 300px;
+  transition: all 0.3s ease;
+}
+
+.one-movie-data img:hover {
+  transform: scale(1);
+  /* box-shadow: 0 0 20px #ffff2e; */
+}
+
+.more-data {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.more-data h1 {
+  padding-bottom: 20px;
+  font-family: "Oswald", sans-serif;
+  font-size: 35px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.more-p {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px !important;
+  color: #fff;
+  font-weight: 300;
+}
+
+.again-more-p {
+  text-transform: uppercase;
+}
+
+.again-data {
+  width: 515px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.again-data p {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px !important;
+}
+
+.overview {
+  height: 240px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.overview::-webkit-scrollbar {
+  height: 0;
+}
+
+.overview-P {
+  padding: 30px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem !important;
+  color: #fff;
+}
+
+.overview-P span {
+  font-weight: bold;
+  /* text-decoration: underline; */
+  font-size: 1.7rem;
+  padding-bottom: 1rem !important;
+}
+
+.two-btn {
+  left: 24%;
+  bottom: 3%;
+  position: fixed;
+}
+
+.two-btn button {
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: black;
+  border: 1px solid #fff;
+}
+
+.two-btn button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+}
+
+#page-not-found {
+  /* background-color: black; */
+  display: none;
+  padding: 10rem;
+  /* color: wheat; */
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  margin: auto;
+}
+
+.cry {
+  width: 8rem;
+}

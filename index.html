@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="In This project we have scrap one TMDB api and get data and this is data show in web page and there is search feature also that you will be use."
+    />
+    <link rel="shortcut icon" href="./img/logo-icon.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>TMDB Movie Sacrap</title>
+  </head>
+  <body>
+    <nav>
+      <!-- <img class="logo" src="./img/logo-icon.png" alt="logo-icon" /> -->
+      <div class="search-div">
+        <div class="serch-box">
+          <input
+            type="text"
+            placeholder="Search Your Fevorite movie?"
+            id="mov-name"
+          />
+          <img src="./img/search.svg" alt="search-img" />
+        </div>
+        <button class="sub-btn" onclick="myfunction2()">Submit</button>
+      </div>
+    </nav>
+    <!-- <img id="message" src="./img/messageImage.jpg" alt="" width="100%" /> -->
+    <section id="page-not-found">
+      <img class="cry" src="./img/cry.jpg" alt="" />
+      <h1>Page Not Found 404</h1>
+    </section>
+    <section id="show-all-data">
+      <div class="movies-data" id="movies-data">
+        <div id="all-movie">
+          <!-- This is all moview display in row. -->
+        </div>
+        <hr />
+        <div id="one-data">
+          <!-- This is Pertuculler Show Data-->
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
