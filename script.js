@@ -107,8 +107,8 @@ function mainData(data) {
               />
               <div class="more-data">
                   <h1>${data["original_title"]}</h1>
-                  <p class="more-p"><span>Release Date :- </span>${data["release_date"]}</p>
                   <div class="again-data">
+                      <p class="more-p"><span>Release Date :- </span>${data["release_date"]}</p>
                       <p class="more-p"><span>Gener :- </span>${data1}</p>
                       <p class="more-p"><span>Run-Time :- </span>${timeFormat} hr</p>
                       <p class="more-p again-more-p"><span>Movie Language :- </span>${data["original_language"]}</p>

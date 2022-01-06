@@ -80,7 +80,7 @@
 @media (max-width: 1100px) {
   #one-data {
     left: 48%;
-    top: 10% !important;
+    top: 8% !important;
   }
 
   .overview {
@@ -120,7 +120,7 @@
 
 @media (max-width: 1024px) {
   #one-data {
-    top: 4%;
+    top: 8% !important;
   }
 
   .overview-P {
@@ -213,7 +213,7 @@
   }
 
   .again-data {
-    gap: 0.2rem;
+    gap: 1rem;
   }
 
   .more-p {
@@ -224,5 +224,177 @@
 
   .more-data h1 {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  #all-movie {
+    width: 23rem;
+  }
+
+  #one-data {
+    top: 10%;
+    left: 47%;
+  }
+
+  .more-p p {
+    font-size: 0.3rem;
+  }
+
+  .more-p span {
+    font-size: 1rem;
+  }
+
+  .one-movie-data {
+    column-gap: 0rem;
+  }
+
+  .overview {
+    width: 28rem;
+    font-size: 0.5rem;
+    height: 12rem;
+  }
+
+  .overview-P {
+    font-size: 1rem !important;
+  }
+
+  .overview-P span {
+    font-size: 1.2rem;
+  }
+
+  #all-movie {
+    width: 24rem;
+  }
+
+  .movie {
+    gap: 0rem;
+  }
+
+  #after-first {
+    font-size: 1.5rem;
+  }
+
+  .movie img {
+    height: 8rem;
+  }
+
+  .movie {
+    height: 9rem;
+  }
+
+  .again-data p {
+    font-size: 1rem !important;
+    width: 13rem;
+    margin-left: -1.7rem !important;
+  }
+
+  .one-movie-data img {
+    height: 15rem;
+  }
+
+  .overview-P {
+    padding: 0 20px;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .other {
+    font-size: 1rem;
+  }
+
+  .again-data {
+    gap: 1rem;
+  }
+
+  .more-p {
+    font-size: 1rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .more-data h1 {
+    font-size: 1.2rem;
+    margin-left: -1.7rem !important;
+  }
+
+  .search-div input {
+    width: 15rem;
+    padding: 0 1rem;
+  }
+
+  .sub-btn {
+    width: 5rem;
+    font-size: 1rem;
+  }
+
+  .movie-data {
+    gap: 0.4rem;
+  }
+}
+
+/* ! i pad responsive */
+
+@media (max-width: 800px) {
+  #all-movie {
+    width: 22rem;
+  }
+
+  #one-data {
+    top: 10%;
+    left: 48%;
+  }
+
+  .movie {
+    width: 19rem;
+    height: 8rem;
+  }
+
+  .movie-data {
+    width: 12rem;
+    margin-left: 0.8rem;
+  }
+
+  .movie img {
+    height: 7rem;
+    margin-right: -0rem;
+  }
+
+  .other {
+    font-size: 0.8rem;
+  }
+
+  .one-movie-data img {
+    height: 11rem;
+  }
+
+  .again-data {
+    margin-left: -2rem;
+  }
+
+  .again-data {
+    gap: 0.5rem;
+  }
+
+  .more-data h1 {
+    margin-left: -3.7rem !important;
+    margin-bottom: -2rem;
+  }
+
+  .overview {
+    width: 25rem;
+    font-size: 0.5rem;
+    height: 10rem;
+    padding: 0 1rem;
+  }
+
+  .overview-P {
+    font-size: 0.8rem !important;
+  }
+
+  .overview-P span {
+    font-size: 1rem;
   }
 }
