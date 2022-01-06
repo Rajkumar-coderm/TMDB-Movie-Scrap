@@ -73,7 +73,7 @@ nav {
 }
 
 .sub-btn:hover {
-  background-color: rgba(40, 236, 40, 0.815);
+  background-color: orange;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }

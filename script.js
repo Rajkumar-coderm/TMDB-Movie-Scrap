@@ -1,23 +1,24 @@
 let pageNumber = 1;
 var gvariable = false;
 var totalpages = 0;
+const API_KEy = "5d98a7a1405b8032e28c31e19e4d10a9";
+const baseUrl = "https://api.themoviedb.org/3/search/movie";
 const myfunction = async function () {
   console.log(pageNumber, totalpages, "page....");
   const movieName = document.getElementById("mov-name").value;
   try {
     if (movieName === "") {
       const res = await fetch(
-        `https://api.themoviedb.org/3/search/movie?api_key=5d98a7a1405b8032e28c31e19e4d10a9&language=en-US&query=a&page=${pageNumber}&include_adult=false`
+        `${baseUrl}?api_key=${API_KEy}&language=en-US&query=a&page=${pageNumber}&include_adult=false`
       );
       const data = await res.json();
-      // console.log(data);
       console.log(data.total_pages);
       totalpages = data.total_pages;
 
       showAllMoviesData(data);
     } else {
       const res = await fetch(
-        `https://api.themoviedb.org/3/search/movie?api_key=5d98a7a1405b8032e28c31e19e4d10a9&language=en-US&query=${movieName}&page=${pageNumber}&include_adult=false`
+        `${baseUrl}?api_key=${API_KEy}&language=en-US&query=${movieName}&page=${pageNumber}&include_adult=false`
       );
       const data = await res.json();
       console.log(data.total_pages);
@@ -40,9 +41,8 @@ const myfunction2 = function () {
 function showAllMoviesData(data) {
   document.getElementById("show-all-data").style.display = "block";
   // document.getElementById("message").style.display = "none";
-  console.log(data.results.length);
+  // console.log(data.results.length);
   if (data.results.length === 0) {
-    // alert("not found");
     document.getElementById("movies-data").style.display = "none";
     document.getElementById("page-not-found").style.display = "block";
   } else {
@@ -82,7 +82,7 @@ function eventCaller() {
 const myData = async function (id) {
   try {
     const res = await fetch(
-      `https://api.themoviedb.org/3/movie/${id}?api_key=5d98a7a1405b8032e28c31e19e4d10a9`
+      `https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEy}`
     );
     const data = await res.json();
     mainData(data);
@@ -138,8 +138,8 @@ const scrollerButtom = async () => {
 window.addEventListener("scroll", () => {
   const { scrollHeight, scrollTop, clientHeight } = document.documentElement;
   if (scrollTop + clientHeight === scrollHeight) {
-    console.log("Scroll down");
-    console.log(scrollTop, clientHeight, scrollHeight);
+    // console.log("Scroll down");
+    // console.log(scrollTop, clientHeight, scrollHeight);
     scrollerButtom();
   } else {
     console.log(
