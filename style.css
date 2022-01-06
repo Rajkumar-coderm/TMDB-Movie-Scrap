@@ -276,3 +276,14 @@ span {
 .cry {
   width: 8rem;
 }
+
+#after-first {
+  /* background-color: black; */
+  /* display: none; */
+  padding: 10rem;
+  /* color: wheat; */
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  margin: auto;
+}

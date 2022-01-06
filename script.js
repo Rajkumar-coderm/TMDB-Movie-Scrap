@@ -40,7 +40,7 @@ const myfunction2 = function () {
 // !Show All movies in Arry Form in The all  section.
 function showAllMoviesData(data) {
   document.getElementById("show-all-data").style.display = "block";
-  // document.getElementById("message").style.display = "none";
+  document.getElementById("after-first").style.display = "none";
   // console.log(data.results.length);
   if (data.results.length === 0) {
     document.getElementById("movies-data").style.display = "none";
