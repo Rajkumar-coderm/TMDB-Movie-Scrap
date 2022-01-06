@@ -57,6 +57,9 @@ function showAllMoviesData(data) {
           <p class="other"><span>Popularity :- </span>${i.popularity}</p>
           <p class="lang other"><span>Language :- </span>${i.original_language}</p>
           <p class="other"><span>Release Data :- </span>${i.release_date}</p>
+          <div class="owerview-movie">
+          <p class="other"><span>Movie overview :- </span>${i.overview}</p>
+          </div>
       </div>
       `;
       document.getElementById("all-movie").appendChild(mydiv);

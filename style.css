@@ -288,3 +288,16 @@ span {
   font-size: 3rem;
   margin: auto;
 }
+
+.owerview-movie {
+  /* background-color: red; */
+  margin-top: 1rem;
+  width: 17rem;
+  height: 7rem;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.owerview-movie::-webkit-scrollbar {
+  height: 0;
+}
