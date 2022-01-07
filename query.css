@@ -521,6 +521,15 @@
   .owerview-movie {
     display: none;
   }
+
+  #after-first {
+    font-size: 0.7rem;
+    margin: 0;
+  }
+
+  #after-first img {
+    width: 2rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -590,5 +599,48 @@
 
   #all-movie:first-child {
     margin-top: 4rem !important;
+  }
+}
+
+@media (max-width: 420px) {
+  body {
+    width: 400px;
+  }
+
+  #after-first {
+    font-size: 0.6rem;
+    margin: 0;
+  }
+
+  #after-first img {
+    width: 2rem;
+  }
+
+  .serch-box input {
+    width: 10rem;
+  }
+
+  nav {
+    width: 400px;
+  }
+
+  .movie {
+    margin: 0 !important;
+    padding: 0 !important;
+    /* background-color: red; */
+    width: 3rem;
+    height: 22rem;
+    gap: 1rem;
+    border-radius: 0;
+  }
+
+  .movie img {
+    margin-left: -1rem;
+    height: 12rem;
+  }
+
+  .movie-data {
+    width: 12rem;
+    margin-left: -0.3rem;
   }
 }
